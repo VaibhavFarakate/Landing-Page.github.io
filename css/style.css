@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dai+Banna+SIL&family=Nunito+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bodyColor: #e2def3;
+}
+
+body {
+  font-family: "Dai Banna SIL", serif;
+  background-color: var(--bodyColor);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar li a {
+  padding: 10px;
+}
+.logo {
+  font-family: "Bungee Spice", cursive;
+}
+.menu li {
+  background-color: #435a6b;
+  color: #e2def3;
+  opacity: 10;
+}
+.mainContent {
+  margin-top: 423px;
+}
+.courses {
+  margin-top: 80px;
+}
+.cardDiv {
+  background-color: #d0cbe7;
+}
+.courseThumbnail .image {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.courseThumbnail:hover .image {
+  opacity: 0.5;
+}
+
+.courseThumbnail:hover .middle {
+  opacity: 1;
+}
+.courseThumbnail {
+  background-color: var(--bodyColor);
+}
+footer ul {
+  list-style: none;
+}
+footer h5 {
+  padding-left: 2rem;
+}
